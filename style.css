@@ -1,9 +1,29 @@
 body {
-  background: rgb(230, 230, 230);
   font-family: 'IBM Plex Sans', sans-serif;
   color: rgb(130, 130, 130);
   font-size: 16px;
-/*  line-height: ;*/
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+@-webkit-keyframes bg-color {
+  0% { background-color: #E3FDFD; }
+  33% { background-color: #CBF1F5; }
+  66% { background-color: #A6E3E9; }
+  100% { background-color: #71C9CE; }
+  66% { background-color: #A6E3E9; }
+  33% { background-color: #CBF1F5; }
+  0% { background-color: #E3FDFD; }
+}
+
+@keyframes bg-color {
+  0% { background-color: #E3FDFD; }
+  33% { background-color: #CBF1F5; }
+  66% { background-color: #A6E3E9; }
+  100% { background-color: #71C9CE; }
+  66% { background-color: #A6E3E9; }
+  33% { background-color: #CBF1F5; }
+  0% { background-color: #E3FDFD; }
 }
 
 h1 {
@@ -58,12 +78,14 @@ li {
 }
 
 .card {
-  background-color: white;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 1px 1px 5px 0px #b7b5b5;
   margin: 20px 0px 20px 0px;
   text-align: center;
+  background-color: #71C9CE;
+  animation: bg-color 0.0001s infinite;
+  -webkit-animation: bg-color 0.0001s infinite;
 }
 
 #img-circle {
